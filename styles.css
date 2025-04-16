@@ -17,17 +17,13 @@
     margin: 0;
     padding: 0;
 }
-/* 
-html, body {
-    height: 100%;
-    overflow-y: hidden;
-} */
 
 body {
     font-family: var(--font-primary);
     color: var(--grey-500);
     line-height: 1.3;
     padding-inline: 1rem;
+    padding-top: 2rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,9 +58,9 @@ header p {
 .card-grid {
     display: grid;
     gap: 1.5rem;
-    grid-template-columns: 1fr;
-    width: min(95%, 1400px);
-    grid-template-columns: repeat(3, 1fr);
+    padding-inline: 1rem;
+    max-width: 1600px;
+    margin-inline: auto;
     padding-bottom: 1rem;
 }
 
@@ -103,7 +99,6 @@ header p {
     border-radius: 5px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     padding: 1.5rem;
-    max-width: 420px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -169,11 +164,7 @@ header p {
     text-decoration: none;
 }
 
-.attribution a:hover {
-    color: purple;
-    text-decoration: underline;
-}
-
+.attribution a:hover,
 .attribution a:active {
     color: purple;
     text-decoration: underline;
